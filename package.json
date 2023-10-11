@@ -11,6 +11,9 @@
       "url": "git+https://github.com/yourusername/my-lib.git"
     },
     "author": "Your Name",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "mongoose": "^7.1.1"
+      }
   }
   
