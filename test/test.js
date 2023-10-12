@@ -1,7 +1,12 @@
 // test/test.js
 
 const assert = require('assert');
-const myLib = require('../lib');
+const core = require('../lib');
 
-assert.strictEqual(myLib.greet('World'), 'Hello, World!');
+console.log('Starting Test...');
+
+
+assert.strictEqual(core.version(), '1.0');
+assert.strictEqual(core.info(), "Advent Services Models 1.0");
+
 console.log('All tests passed!');
