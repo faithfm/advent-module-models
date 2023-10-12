@@ -21,7 +21,8 @@
     },
     "husky": {
       "hooks": {
-        "pre-commit": "npm run version-patch && git add package.json"
+        "pre-commit": "npm test",
+        "post-commit": "npm run version-patch && git add package.json"
       }
     }    
 }
