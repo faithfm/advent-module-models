@@ -4,9 +4,7 @@
     "description": "This is a module for the Advent Services and contains the Models for MongoDB",
     "main": "lib/index.js",
     "scripts": {
-        "prepare": "husky install",
-        "test": "node test/test.js",
-        "version-patch": "npm version patch -m \"Version release: %s\""
+        "test": "node test/test.js"
     },
     "repository": {
         "type": "git",
@@ -16,13 +14,5 @@
     "license": "MIT",
     "peerDependencies": {
         "mongoose": "^7.1.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run version-patch && git add package.json"
-        }
-    },
-    "devDependencies": {
-        "husky": "^8.0.3"
     }
 }
