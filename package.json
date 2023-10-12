@@ -4,16 +4,24 @@
     "description": "This is a module for the Advent Services and contains the Models for MongoDB",
     "main": "lib/index.js",
     "scripts": {
-      "test": "node test/test.js"
+        "test": "node test/test.js",
+        "version-patch": "npm version patch -m \"Bump to %s\""
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/faithfm/advent-module-models"
+        "type": "git",
+        "url": "git+https://github.com/faithfm/advent-module-models"
     },
     "author": "Robbie Berghan",
     "license": "MIT",
     "peerDependencies": {
         "mongoose": "^7.1.1"
-    }
-  }
-  
+    },
+    "devDependencies": {
+        "husky": "^8.0.3"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run version-patch && git add package.json"
+      }
+    }    
+}
