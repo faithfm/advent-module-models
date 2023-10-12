@@ -4,6 +4,7 @@
     "description": "This is a module for the Advent Services and contains the Models for MongoDB",
     "main": "lib/index.js",
     "scripts": {
+        "prepare": "husky install",
         "test": "node test/test.js",
         "version-patch": "npm version patch -m \"Bump to %s\""
     },
@@ -20,9 +21,9 @@
         "husky": "^8.0.3"
     },
     "husky": {
-      "hooks": {
-        "pre-commit": "npm test",
-        "post-commit": "npm run version-patch && git add package.json"
-      }
-    }    
+        "hooks": {
+            "pre-commit": "npm test",
+            "post-commit": "npm run version-patch && git add package.json"
+        }
+    }
 }
