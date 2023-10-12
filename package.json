@@ -1,19 +1,19 @@
 {
     "name": "advent-module-models",
     "version": "1.0.0",
-    "description": "A simple greeting library",
+    "description": "This is a module for the Advent Services and contains the Models for MongoDB",
     "main": "lib/index.js",
     "scripts": {
       "test": "node test/test.js"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/yourusername/my-lib.git"
+      "url": "git+https://github.com/faithfm/advent-module-models"
     },
-    "author": "Your Name",
+    "author": "Robbie Berghan",
     "license": "MIT",
-    "dependencies": {
+    "peerDependencies": {
         "mongoose": "^7.1.1"
-      }
+    }
   }
   
