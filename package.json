@@ -6,7 +6,7 @@
     "scripts": {
         "prepare": "husky install",
         "test": "node test/test.js",
-        "version-patch": "npm version patch -m \"Bump to %s\""
+        "version-patch": "npm version patch -m \"Version release: %s\""
     },
     "repository": {
         "type": "git",
@@ -19,8 +19,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm test",
-            "post-commit": "npm run version-patch && git add package.json"
+            "pre-commit": "npm run version-patch && git add package.json"
         }
     },
     "devDependencies": {
