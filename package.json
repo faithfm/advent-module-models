@@ -1,6 +1,6 @@
 {
     "name": "advent-module-models",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "This is a module for the Advent Services and contains the Models for MongoDB",
     "main": "lib/index.js",
     "scripts": {
